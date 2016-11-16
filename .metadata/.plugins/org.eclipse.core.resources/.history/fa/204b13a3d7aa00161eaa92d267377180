@@ -1,0 +1,9 @@
+package com.example.activitytest;
+
+import java.util.ArrayList;
+
+public class ActivityCollector {
+public  static List<Activity> activities=new ArrayList<E>();
+	
+
+}

@@ -1,0 +1,14 @@
+package com.example.activitytest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+
+public class ActivityCollector {
+	public static List<Activity> activities = new ArrayList<Activity>();
+
+	public static void addActivity(Activity activity) {
+		activities.add(activity);
+	}
+}

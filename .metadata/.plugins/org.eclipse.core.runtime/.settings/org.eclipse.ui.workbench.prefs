@@ -1,0 +1,11 @@
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jface.textfont
+eclipse.preferences.version=1
+org.eclipse.cdt.internal.ui.compare.AsmMergeViewer=1|Courier New|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+org.eclipse.compare.contentmergeviewer.TextMergeViewer=1|Courier New|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+org.eclipse.jdt.ui.PropertiesFileEditor.textfont=1|Courier New|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+org.eclipse.jdt.ui.editors.textfont=1|Courier New|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+org.eclipse.jdt.ui.javadocfont=1|Microsoft YaHei UI|10.5|0|WINDOWS|1|-14|0|0|0|400|0|0|0|-122|3|2|1|34|Microsoft YaHei UI;
+org.eclipse.jface.textfont=1|Courier New|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+org.eclipse.ui.workbench.VIEW_MESSAGE_TEXT_FONT=1|Microsoft YaHei UI|10.5|0|WINDOWS|1|-14|0|0|0|400|0|0|0|-122|3|2|1|34|Microsoft YaHei UI;
+org.eclipse.ui.workbench.texteditor.blockSelectionModeFont=1|Courier New|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;

@@ -1,0 +1,74 @@
+package com.example.activitytest;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.Toast;
+
+/**
+ * 
+ * @ClassName: BaseActivity
+ * @Description: TODO(这里用一句话描述这个类的作用)
+ * @author jinpp
+ * @date 2016-11-15 上午9:20:29
+ * 
+ */
+public class BaseActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+		switch (requestCode) {
+		case 1:
+			if (resultCode == RESULT_OK) {
+				String resultdata = data.getStringExtra("data_return");
+				Log.d("data2", resultdata);
+			}
+			break;
+		default:
+		}
+		// TODO Auto-generated method stub
+		// super.onActivityResult(requestCode, resultCode, data);
+	}
+
+	/**
+	 * 显示菜单项
+	 */
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// TODO jinpp 菜单项
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	/**
+	 * 选中菜单项的动作
+	 */
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// TODO jinpp 菜单项选择
+		switch (item.getItemId()) {
+		case R.id.add_item:
+			Toast.makeText(this, "你点击了新增。", Toast.LENGTH_SHORT).show();
+			break;
+		case R.id.remove_item:
+			Toast.makeText(this, "你点击了删除。", Toast.LENGTH_SHORT).show();
+			break;
+		default:
+		}
+		return true;
+	}
+}
