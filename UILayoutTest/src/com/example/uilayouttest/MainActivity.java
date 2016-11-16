@@ -1,6 +1,7 @@
 package com.example.uilayouttest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -13,7 +14,7 @@ import android.widget.Toast;
 /**
  * 
  * @ClassName: MainActivity
- * @Description: TODO(四种基本布局)
+ * @Description: TODO(线性布局)
  * @author jinpp
  * @date 2016-11-16 下午2:12:03
  * 
@@ -26,7 +27,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.linearlayout);
 		send = (Button) findViewById(R.id.button1);
 		edit = (EditText) findViewById(R.id.inputmess);
 		send.setOnClickListener(this);
@@ -43,14 +44,16 @@ public class MainActivity extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.button1:
-			String editcontent = edit.getText().toString();
+			Intent intent=new Intent(MainActivity.this, RelativeActivity.class);
+			startActivity(intent);
+			/*String editcontent = edit.getText().toString();
 			if (editcontent.length() > 0) {
 				Toast.makeText(MainActivity.this, editcontent,
 						Toast.LENGTH_SHORT).show();
 			} else {
 				Toast.makeText(MainActivity.this, "hello jinpp",
 						Toast.LENGTH_SHORT).show();
-			}
+			}*/
 			break;
 		default:
 			break;

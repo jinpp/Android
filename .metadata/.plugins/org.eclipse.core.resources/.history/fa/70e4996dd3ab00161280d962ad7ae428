@@ -1,0 +1,28 @@
+package com.example.uilayouttest;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Window;
+import android.widget.Button;
+
+/**
+ * 
+ * @ClassName: RelativeActivity
+ * @Description: TODO(相对布局)
+ * @author jinpp
+ * @date 2016-11-16 下午3:41:49
+ * 
+ */
+public class RelativeActivity extends Activity {
+private Button button1;
+private Button button2;
+private Button button3;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.relativelayout);
+	}
+
+}
