@@ -1,9 +1,7 @@
 package com.example.uiwidgettest;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -14,6 +12,14 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+/**
+ * 
+ * @ClassName: MainActivity
+ * @Description: TODO(常见控件的使用)
+ * @author jinpp
+ * @date 2016-11-16 下午2:09:33
+ * 
+ */
 public class MainActivity extends Activity implements OnClickListener {
 	private Button button;
 	private EditText edittext;

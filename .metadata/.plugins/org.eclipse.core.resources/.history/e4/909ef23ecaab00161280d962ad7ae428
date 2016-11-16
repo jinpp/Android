@@ -1,0 +1,51 @@
+package com.example.uilayouttest;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+import android.view.Menu;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.Toast;
+
+/**
+ * 
+ * @ClassName: MainActivity
+ * @Description: TODO(四种基本布局)
+ * @author jinpp
+ * @date 2016-11-16 下午2:12:03
+ * 
+ */
+public class MainActivity extends Activity implements OnClickListener {
+	private Button send;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.activity_main);
+		send = (Button) findViewById(R.id.button1);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	// TODO 点击按钮触发的事件
+	@Override
+	public void onClick(DialogInterface dialog, int which) {
+		// TODO Auto-generated method stub
+		String editcontent = send.getText().toString();
+		if(editcontent.length()>0){
+			Toast.makeText(MainActivity.this, editcontent, Toast.LENGTH_SHORT);
+		}else{
+			Toast.makeText(MainActivity.this, editcontent, Toast.LENGTH_SHORT);
+		}
+		
+	}
+
+}
