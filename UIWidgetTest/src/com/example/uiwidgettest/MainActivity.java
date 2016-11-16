@@ -1,6 +1,9 @@
 package com.example.uiwidgettest;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -10,7 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnClickListener {
 	private Button button;
@@ -43,24 +45,54 @@ public class MainActivity extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.button1:
-			int progress=progressbar.getProgress();
-			progress=progress+10;
-			progressbar.setProgress(progress);
-//			if(progressbar.getVisibility()==View.GONE){
-//				progressbar.setVisibility(View.VISIBLE);
-//			}else{
-//				progressbar.setVisibility(View.GONE);	
-//			}
-			/* imageview.setImageResource(R.drawable.myphone);
-			String inputtext = edittext.getText().toString();
-			if (inputtext.length() > 0) {
-				Toast.makeText(MainActivity.this, inputtext, Toast.LENGTH_SHORT)
-						.show();
-			}*/
+			ProgressDialog progressdialog = new ProgressDialog(
+					MainActivity.this);
+			progressdialog.setTitle("This is a progressdialog");
+			progressdialog.setMessage("hehehehe");
+			progressdialog.setCancelable(true);
+			progressdialog.show();
+			// AlertDialog.Builder dialog = new AlertDialog.Builder(
+			// MainActivity.this);
+			// dialog.setTitle("This is a Dialog!");
+			// dialog.setMessage("This is an important message!");
+			// // dialog.setCancelable(false);
+			// dialog.setNegativeButton("OK",
+			// new DialogInterface.OnClickListener() {
+			//
+			// @Override
+			// public void onClick(DialogInterface dialog, int which) {
+			// // TODO Auto-generated method stub
+			//
+			// }
+			// });
+			// dialog.setPositiveButton("Cancel",
+			// new DialogInterface.OnClickListener() {
+			//
+			// @Override
+			// public void onClick(DialogInterface dialog, int which) {
+			// // TODO Auto-generated method stub
+			//
+			// }
+			// });
+			// dialog.show();
+			/*
+			 * int progress=progressbar.getProgress(); progress=progress+10;
+			 * progressbar.setProgress(progress);
+			 */
+			// if(progressbar.getVisibility()==View.GONE){
+			// progressbar.setVisibility(View.VISIBLE);
+			// }else{
+			// progressbar.setVisibility(View.GONE);
+			// }
+			/*
+			 * imageview.setImageResource(R.drawable.myphone); String inputtext
+			 * = edittext.getText().toString(); if (inputtext.length() > 0) {
+			 * Toast.makeText(MainActivity.this, inputtext, Toast.LENGTH_SHORT)
+			 * .show(); }
+			 */
 			break;
 		default:
 			break;
 		}
 	}
-
 }
