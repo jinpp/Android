@@ -1,0 +1,18 @@
+
+package android.widget;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.util.AttributeSet;
+
+@SuppressLint("ViewConstructor")
+public class TitleLayout extends LinearLayout {
+
+	public TitleLayout(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		// TODO Auto-generated constructor stub
+	}
+         
+    }
+
+   

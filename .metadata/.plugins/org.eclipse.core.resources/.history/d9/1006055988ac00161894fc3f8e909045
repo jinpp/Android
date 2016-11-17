@@ -1,0 +1,11 @@
+
+package android.widget;
+
+import android.annotation.SuppressLint;
+
+@SuppressLint("ViewConstructor")
+public class TitleLayout extends LinearLayout {
+         
+    }
+
+   

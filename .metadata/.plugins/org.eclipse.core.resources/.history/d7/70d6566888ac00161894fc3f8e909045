@@ -1,0 +1,23 @@
+
+package android.widget;
+
+import android.content.Context;
+import android.util.AttributeSet;
+/**
+ * 
+* @ClassName: TitleLayout  
+* @Description: TODO(这里用一句话描述这个类的作用)  
+* @author jinpp
+* @date 2016-11-17 下午1:40:53  
+*
+ */
+public class TitleLayout extends LinearLayout {
+
+	public TitleLayout(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		
+	}
+         
+    }
+
+   

@@ -1,0 +1,16 @@
+
+package android.widget;
+
+import android.content.Context;
+import android.util.AttributeSet;
+
+public class TitleLayout extends LinearLayout {
+
+	public TitleLayout(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		
+	}
+         
+    }
+
+   
