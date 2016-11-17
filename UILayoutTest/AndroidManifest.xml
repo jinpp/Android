@@ -25,6 +25,7 @@
         <activity android:name=".RelativeActivity" >
            
         </activity>
+        <activity android:name=".TableActivity"></activity>
     </application>
 
 </manifest>

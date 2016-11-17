@@ -61,29 +61,28 @@ public class RelativeActivity extends Activity implements OnClickListener {
 					Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.button3:
-			alertdialog.setTitle("hi");
-			alertdialog.setMessage("huhu");
-			alertdialog.setCancelable(true);
-			alertdialog.setPositiveButton("OK",
-					new DialogInterface.OnClickListener() {
-
-						@Override
-						public void onClick(DialogInterface dialog, int which) {
-							// TODO Auto-generated method stub
-
-						}
-					});
-			alertdialog.setNegativeButton("Cancel",
-					new DialogInterface.OnClickListener() {
-
-						@Override
-						public void onClick(DialogInterface dialog, int which) {
-							// TODO Auto-generated method stub
-
-						}
-					});
-		
-			alertdialog.show();
+			Intent intent = new Intent(RelativeActivity.this,
+					TableActivity.class);
+			startActivity(intent);
+			/*
+			 * alertdialog.setTitle("hi"); alertdialog.setMessage("huhu");
+			 * alertdialog.setCancelable(true);
+			 * alertdialog.setPositiveButton("OK", new
+			 * DialogInterface.OnClickListener() {
+			 * 
+			 * @Override public void onClick(DialogInterface dialog, int which)
+			 * { // TODO Auto-generated method stub
+			 * 
+			 * } }); alertdialog.setNegativeButton("Cancel", new
+			 * DialogInterface.OnClickListener() {
+			 * 
+			 * @Override public void onClick(DialogInterface dialog, int which)
+			 * { // TODO Auto-generated method stub
+			 * 
+			 * } });
+			 * 
+			 * alertdialog.show();
+			 */
 			break;
 
 		case R.id.button4:

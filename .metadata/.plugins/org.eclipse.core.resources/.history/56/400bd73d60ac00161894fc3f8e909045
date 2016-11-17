@@ -1,0 +1,21 @@
+package com.example.uilayouttest;
+
+import android.app.Activity;
+import android.os.Bundle;
+/**
+ * 
+* @ClassName: TableActivity  
+* @Description: TODO(这里用一句话描述这个类的作用)  
+* @author jinpp
+* @date 2016-11-17 上午8:53:21  
+*
+ */
+public class TableActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+	}
+
+}
