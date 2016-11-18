@@ -1,8 +1,0 @@
-
-package android.widget;
-
-public class TitleLayout extends LinearLayout {
-         
-    }
-
-   
