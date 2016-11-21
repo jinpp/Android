@@ -34,7 +34,7 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
 		ImageView fruitimage = (ImageView) view.findViewById(R.id.fruit_image);
 		TextView fruitname = (TextView) view.findViewById(R.id.fruit_name);
 		fruitimage.setImageResource(fruit.getImageId());
-		fruitname.setText(fruit.getName());
+		fruitname.setText(fruitname.getId());
 		return view;
 	}
 

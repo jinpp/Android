@@ -9,8 +9,8 @@ import android.view.Menu;
 import android.widget.ListView;
 
 public class MainActivity extends Activity {
-	/*private String[] datas = { "Apple", "Banana", "Orange", "Peach", "Pear",
-			"Melon" };*/
+	private String[] datas = { "Apple", "Banana", "Orange", "Peach", "Pear",
+			"Melon" };
 	private List<Fruit> fruitlist = new ArrayList<Fruit>();
 
 	@Override
@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 	}
 
 	private void initFruits() {
-		Fruit apple = new Fruit("Apple", R.drawable.apple);
+		Fruit apple = new Fruit("Apple", R.drawable.ic_launcher);
 		fruitlist.add(apple);
 		Fruit banana = new Fruit("Banana", R.drawable.banana);
 		fruitlist.add(banana);
@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 		fruitlist.add(peach);
 		Fruit pear = new Fruit("Pear", R.drawable.pear);
 		fruitlist.add(pear);
-		Fruit melon = new Fruit("Melon", R.drawable.melon);
+		Fruit melon = new Fruit("melon", R.drawable.melon);
 		fruitlist.add(melon);
 
 	}
