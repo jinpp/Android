@@ -1,0 +1,23 @@
+package com.example.uilistviewtest;
+
+import java.util.List;
+
+import android.content.Context;
+import android.widget.ArrayAdapter;
+
+/**
+ * 
+ * @ClassName: FruitAdapter
+ * @Description: TODO(ÊÊÅäÆ÷)
+ * @author jinpp
+ * @date 2016-11-21 ÏÂÎç1:22:54
+ * 
+ */
+public class FruitAdapter extends ArrayAdapter<Fruit> {
+
+	public FruitAdapter(Context context, int resource, List<Fruit> objects) {
+		super(context, resource, objects);
+		
+	}
+
+}

@@ -1,0 +1,50 @@
+package com.example.uilistviewtest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.widget.ListView;
+
+public class MainActivity extends Activity {
+	private String[] datas = { "Apple", "Banana", "Orange", "Peach", "Pear",
+			"Melon" };
+	private List<Fruit> fruitlist = new ArrayList<Fruit>();
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		initFruits();
+		FruitAdapter fruitadapter = new FruitAdapter(MainActivity.this,
+				R.layout.fruit_item, fruitlist);
+		ListView listview = (ListView) findViewById(R.id.listview);
+		listview.setAdapter(fruitadapter);
+	}
+
+	private void initFruits() {
+		Fruit apple = new Fruit("Apple", R.drawable.apple);
+		fruitlist.add(apple);
+		Fruit banana = new Fruit("Banana", R.drawable.banana);
+		fruitlist.add(apple);
+		Fruit orange = new Fruit("Orange", R.drawable.orange);
+		fruitlist.add(apple);
+		Fruit peach = new Fruit("Peach", R.drawable.peach);
+		fruitlist.add(apple);
+		Fruit pear = new Fruit("Pear", R.drawable.pear);
+		fruitlist.add(apple);
+		Fruit melon = new Fruit("melon", R.drawable.melon);
+		fruitlist.add(apple);
+
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+}

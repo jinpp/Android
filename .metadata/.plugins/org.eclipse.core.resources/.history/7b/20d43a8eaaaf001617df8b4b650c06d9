@@ -1,0 +1,16 @@
+package com.example.uilistviewtest;
+
+import java.util.List;
+
+import android.content.Context;
+import android.widget.ArrayAdapter;
+
+public class FruitAdapter extends ArrayAdapter<Fruit>{
+
+	public FruitAdapter(Context context, int resource, List<Fruit> objects) {
+		super(context, resource, objects);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+}

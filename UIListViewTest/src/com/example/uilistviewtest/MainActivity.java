@@ -1,23 +1,43 @@
 package com.example.uilistviewtest;
 
-import android.os.Bundle;
+import java.util.ArrayList;
+import java.util.List;
+
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends Activity {
-	private String[] datas = { "Apple", "Banana", "Orange", "Pear", "Cherry",
-			"Mango" };
+	private String[] datas = { "Apple", "Banana", "Orange", "Peach", "Pear",
+			"Melon" };
+	private List<Fruit> fruitlist = new ArrayList<Fruit>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-				MainActivity.this, android.R.layout.simple_list_item_1, datas);
+		initFruits();
+		FruitAdapter fruitadapter = new FruitAdapter(MainActivity.this,
+				R.layout.fruit_item, fruitlist);
 		ListView listview = (ListView) findViewById(R.id.listview);
-		listview.setAdapter(adapter);
+		listview.setAdapter(fruitadapter);
+	}
+
+	private void initFruits() {
+		Fruit apple = new Fruit("Apple", R.drawable.apple);
+		fruitlist.add(apple);
+		Fruit banana = new Fruit("Banana", R.drawable.banana);
+		fruitlist.add(banana);
+		Fruit orange = new Fruit("Orange", R.drawable.orange);
+		fruitlist.add(orange);
+		Fruit peach = new Fruit("Peach", R.drawable.peach);
+		fruitlist.add(peach);
+		Fruit pear = new Fruit("Pear", R.drawable.pear);
+		fruitlist.add(pear);
+		Fruit melon = new Fruit("melon", R.drawable.melon);
+		fruitlist.add(melon);
+
 	}
 
 	@Override
